@@ -1,0 +1,96 @@
+#caja {
+    max-width: 26.5rem;
+    margin: auto;
+    border-radius: 10px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    
+    
+}
+
+.record {
+    list-style: none;
+    width: 100%;
+    height: 13.5rem;
+    background-color: blueviolet;
+    padding: 0.5rem;
+    background-color: yellowgreen;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-end;
+    overflow-y: scroll;
+}
+
+.record li {
+    width: 100%;
+    font-size: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.equal-sign {
+    justify-self: right;
+}
+.result {
+    font-weight: 500;
+    justify-self: right;
+}
+.resultado {
+    display: flex;
+    width: 100%;
+    height: 4.5rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding: 0rem;
+
+    background-color: aquamarine;
+}
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(3,3.3rem);
+    grid-template-rows: repeat(3,3.3rem);
+    gap: 0.4rem;
+    padding: 1rem;
+}
+
+.key_item {
+    background-color:black;
+    border-radius: 0.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+   background-color: wheat;
+    cursor: pointer;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.delete {
+    width: 40%;
+}
+.key_item:active {
+    background-color: rgb(146, 204, 226);
+}
+.key_item:hover {
+    font-weight: 800;
+}
+.key_tiem_color1 {
+    background-color: yellowgreen;
+}
+.key_tiem_color2 {
+ background-color: green;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 6;
+    font-size: 6rem;
+}
