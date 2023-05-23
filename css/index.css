@@ -1,5 +1,5 @@
 #caja {
-    max-width: 26.5rem;
+    max-width: 27.5rem;
     margin: auto;
     border-radius: 10px;
     background-color: blueviolet;
@@ -11,7 +11,7 @@
 .record {
     list-style: none;
     width: 100%;
-    height: 13.5rem;
+    height: 11.5rem;
     background-color: blueviolet;
     padding: 0.5rem;
     background-color: yellowgreen;
@@ -38,20 +38,20 @@
 }
 .resultado {
     display: flex;
-    width: 100%;
-    height: 4.5rem;
+    width: 93%;
+    height: -0rem;
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 600;
     border: none;
     outline: none;
-    padding: 0rem;
-
+    padding: 1rem;
+    background-color: yellow;
     background-color: aquamarine;
 }
 .teclado {
     display: grid;
-    grid-template-columns: repeat(3,3.3rem);
-    grid-template-rows: repeat(3,3.3rem);
+    grid-template-columns: repeat(3,2.5rem);
+    grid-template-rows: repeat(3,2.5rem);
     gap: 0.4rem;
     padding: 1rem;
 }
@@ -62,21 +62,21 @@
     font-size: 1.8rem;
     font-weight: 600;
    background-color: wheat;
-    cursor: pointer;
+   cursor: pointer;
 
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 .delete {
-    width: 40%;
+    width: 20%;
 }
 .key_item:active {
     background-color: rgb(146, 204, 226);
@@ -89,8 +89,9 @@
 }
 .key_tiem_color2 {
  background-color: green;
-    grid-column-end: 6;
-    grid-row-start: 4;
-    grid-row-end: 6;
-    font-size: 6rem;
+ grid-column-end: 6;
+ grid-row-start: 4;
+ grid-row-end: 6;
+ font-size: 6rem;
+
 }

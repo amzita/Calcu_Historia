@@ -24,15 +24,16 @@ function delete_letter(){
     results.value = nuevoValor;
 }
 
-function calculate(){
+function calculate() {
     operation = document.querySelector(".resultado");
-    let r = eval(operation.value);
-    set_record(operation.value,r);
+    let value = operation.value;
+    value = value.replace("x²", "**2");
+    let r = eval(value);
+    set_record(operation.value, r);
     operation.value = r;
-}
+  }
 
 let keys_dom = document.querySelectorAll(".key_item");
-
 keys_dom.forEach((keys_content) => {
     let content = keys_content.innerHTML;
 
@@ -42,7 +43,13 @@ keys_dom.forEach((keys_content) => {
         keys_content.addEventListener("click", calculate);
     } else if (content == "AC") {
         keys_content.addEventListener("click", reset_all);
+    } else if (content == '<img src="https://cdn-icons-png.flaticon.com/512/2087/2087825.png" class="delete">') {
+        keys_content.addEventListener("click", delete_letter);
     } else {
         keys_content.addEventListener("click", add_key);
     }
 });
+
+
+
+
